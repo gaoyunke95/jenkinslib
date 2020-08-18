@@ -29,7 +29,7 @@ pipeline {
                         println("${test}")
                         //input id: 'test', message: 'continue', ok: 'yes', parameters: []
                         
-                        tools.PrintMes("this is my lib test", 'green')
+                        tools.PrintMes("this is my lib test")
                     }
                 }
             }
