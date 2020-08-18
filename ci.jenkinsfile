@@ -1,6 +1,6 @@
 #!groovy
 
-@Library('jenkinslib') _
+@Library('jenkinslib@master') _
 
 def build = new org.devops.build()
 
@@ -8,7 +8,7 @@ String buildType = "${env.buildType}"
 String buildShell = "${env.buildShell}"
 
 pipeline{
-	agent any
+	agent { node { label "master"}}
 
 	stages{
 		stage("build"){
