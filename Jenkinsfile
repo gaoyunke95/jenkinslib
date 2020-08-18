@@ -27,7 +27,7 @@ pipeline {
                     script{
                         println("get code")
                         println("${test}")
-                        input id: 'test', message: 'continue', ok: 'yes', parameters: []
+                       // input id: 'test', message: 'continue', ok: 'yes', parameters: []
                     }
                 }
             }
@@ -52,7 +52,8 @@ pipeline {
                         timeout(time:20, unit:"MINUTES"){
                             script{
                                 println("code scan")
-                                tools.PrintMes("this is my lib test",'green')
+                             
+                                tools.PrintMes("this is my lib test", 'green')
                             }
                         }
                     }
