@@ -52,7 +52,7 @@ pipeline {
                         timeout(time:20, unit:"MINUTES"){
                             script{
                                 println("code scan")
-                                tools.PrintMes("this is my lib test")
+                                tools.PrintMes("this is my lib test","green")
                             }
                         }
                     }
